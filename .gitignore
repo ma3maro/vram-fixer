@@ -9,6 +9,7 @@ __pycache__/
 .env.*
 **/node_modules/
 **/.hyperframes/
+**/.thumbnails/
 demo/textures/
 demo/SHOWCASE/
 demo/texture_manifest.json
