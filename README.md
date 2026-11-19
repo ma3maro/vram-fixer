@@ -4,7 +4,9 @@
 
 **A free Blender 5.3 add-on for Cycles scenes that put pressure on GPU memory.** Choose a size reference, protect the important objects, and reduce oversized textures and small, dense meshes. Restore the originals when you need them.
 
-**[Download the add-on](https://github.com/ma3maro/vram-fixer/releases/latest/download/vram_fixer-1.1.0.zip)** · **[Free demo scenes and media](https://github.com/ma3maro/vram-fixer/releases/latest)** · [How the tests were measured](benchmarks/README.md)
+**[Download the add-on](https://github.com/ma3maro/vram-fixer/releases/latest/download/vram_fixer-1.1.0.zip)** · **[Free Reddit media kit](https://github.com/ma3maro/vram-fixer/releases/latest/download/reddit-media-kit.zip)** · [How the tests were measured](benchmarks/README.md)
+
+Upload note: the add-on and media kit are live. The large packed `.blend` and 16-bit-render archives timed out and are **not attached**. Original demo generators are included below; the author still has the packed files locally.
 
 No account, API key or cloud service. GPL-3.0-or-later.
 
@@ -28,7 +30,7 @@ In our deliberately oversized **12K texture pressure test**, an RTX 4060 Ti 8GB 
 
 ### Same burning room. Less overhead.
 
-The downloadable, original 3D demo has 656 objects, sculpted fire, volume smoke, a sleepy dog and deliberately oversized source bakes.
+The original 3D demo has 656 objects, sculpted fire, volume smoke, a sleepy dog and deliberately oversized source bakes. Its generators are included.
 
 ![Burning-room comparison](media/02-burning-room-before-after.png)
 
@@ -65,7 +67,7 @@ Core preparation took **13.32s**, separately from rendering. This is primarily a
 
 - `vram_fixer/`: add-on source. Install the release ZIP, not GitHub's source-code ZIP.
 - `tests/`: policy and actual-Blender regression tests.
-- `demo/`: reproducible original scene/texture generators. Large packed `.blend` files and 16-bit renders are **release assets**, not git objects.
+- `demo/`: reproducible original scene/texture generators. The large packed scene/render uploads did not finish; those files are not currently in Releases.
 - `benchmarks/`: measured results, definitions and native log excerpts.
 - `media/`, `marketing/`: ready-to-post comparisons, GIFs, MP4s and Reddit drafts.
 - `promo/`, `promo-pressure/`: editable local HTML animation projects.
