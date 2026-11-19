@@ -2,11 +2,13 @@
 
 ## Keep the shot. Cut the waste.
 
-**Free, open-source optimization for Blender 5.3 / Cycles.** Pick a size reference, protect the important objects, and reduce oversized textures and small, dense meshes without overwriting the originals.
+**Free, open-source optimization for Blender / Cycles.** Pick a size reference, protect the important objects, and reduce oversized textures and small, dense meshes without overwriting the originals.
 
-### [Download VRAM Fixer](https://github.com/ma3maro/vram-fixer/releases/latest/download/vram_fixer-1.1.0.zip)
+### [Download VRAM Fixer](https://github.com/ma3maro/vram-fixer/releases/latest/download/vram_fixer-1.1.1.zip)
 
 No signup. No API keys. No cloud service.
+
+**Compatibility:** the 5.3-only gate is removed. The installer permits Blender **4.2 and later**, the minimum for Blender's extension format. Runtime checks passed on **5.0.1, 5.1.2 and 5.3.0**; 4.x is not runtime-tested here. Version numbers in the benchmark media describe the test setup, not an exclusive requirement.
 
 ![Real burning-room before and after comparison](media/room-comparison.gif)
 
@@ -43,7 +45,7 @@ The before scene already rendered using system RAM. These are not physical per-p
 
 ## Install and use
 
-1. **Download** `vram_fixer-1.1.0.zip` using the link above. GitHub's source-code ZIP is not the installer.
+1. **Download** `vram_fixer-1.1.1.zip` using the link above. GitHub's source-code ZIP is not the installer.
 2. In Blender, choose **Preferences → Add-ons → Install from Disk** and enable VRAM Fixer.
 3. Open **3D View → N → VRAM Fixer**.
 4. Select a medium-sized or focal mesh, then **Use Active Object as Reference**. It is protected by default.

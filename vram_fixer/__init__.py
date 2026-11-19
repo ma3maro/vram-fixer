@@ -2,8 +2,8 @@
 bl_info = {
     'name': 'VRAM Fixer',
     'author': 'VRAM Fixer',
-    'version': (1, 1, 0),
-    'blender': (5, 3, 0),
+    'version': (1, 1, 1),
+    'blender': (4, 2, 0),
     'location': 'View3D > Sidebar > VRAM Fixer',
     'description': 'Reference-sized camera analysis, protected assets and reversible VRAM optimization',
     'category': 'Render',
