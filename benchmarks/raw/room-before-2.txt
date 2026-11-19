@@ -1,0 +1,11 @@
+Verbatim native Cycles log excerpts. Not dedicated-VRAM readings.
+
+00:07.906  cycles           | System memory statistics after full device sync:
+                            |   Usage: 2,777,229,832 (2.59G)
+                            |   Peak: 2,844,724,648 (2.65G)
+00:20.187  cycles           | Rendered 32 samples in 6.04073 seconds (0.188773 seconds per sample), occupancy: 0.513223
+00:40.375  cycles           | Rendering in main loop is done in 32.4415 seconds.
+                            | Path tracing on: NVIDIA GeForce RTX 4060 Ti (OptiX) [CUDA_NVIDIA GeForce RTX 4060 Ti_0000:01:00_OptiX]
+                            | Denoising on: Intel Core i5-14600K (CPU) (20 threads) [CPU]
+  Full image memory: 2.00G (2,147,483,648)
+  Total image memory: 2.00G (2,147,485,216)

@@ -1,0 +1,401 @@
+{
+  "scene": "KEEP THE SHOT | Burning Room",
+  "blender": "5.3.0",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti 8GB",
+  "backend": "OptiX GPU only",
+  "render_settings": {
+    "resolution": [
+      1920,
+      1280,
+      100
+    ],
+    "samples": 192,
+    "adaptive": true,
+    "threshold": 0.017999999225139618,
+    "seed": 321,
+    "exposure": -0.6499999761581421,
+    "camera_matrix": [
+      [
+        0.8849181532859802,
+        -0.12534944713115692,
+        0.4485614597797394,
+        6.400000095367432
+      ],
+      [
+        0.46574658155441284,
+        0.23816396296024323,
+        -0.8522664308547974,
+        -11.699999809265137
+      ],
+      [
+        -4.9335532992245135e-08,
+        0.9631019830703735,
+        0.2691366970539093,
+        6.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "metrics": [
+    {
+      "key": "texture_allocation",
+      "label": "Cycles image/texture allocation",
+      "unit": "MiB",
+      "before": 2048.001495361328,
+      "after": 807.2514953613281,
+      "reduction_percent": 60.583451858324686,
+      "qualification": "Native Cycles image allocation report; not total dedicated GPU VRAM."
+    },
+    {
+      "key": "cycles_allocation",
+      "label": "Cycles reported peak allocation",
+      "unit": "MiB",
+      "before": 2712.941062927246,
+      "after": 1455.9117393493652,
+      "reduction_percent": 46.334560700760456,
+      "qualification": "Native Cycles allocation report; can include mapped host memory and excludes driver/compositor overhead."
+    },
+    {
+      "key": "gpu_global",
+      "label": "Sampled global GPU peak, mean of two runs",
+      "unit": "MiB",
+      "before": 5219.0,
+      "after": 3953.0,
+      "reduction_percent": 24.257520597815674,
+      "qualification": "nvidia-smi sampled global total, including Windows/apps; not isolated per-process VRAM. Desktop usage varied between runs."
+    },
+    {
+      "key": "mesh_triangles",
+      "label": "Evaluated mesh triangles",
+      "unit": "triangles",
+      "before": 663364,
+      "after": 384224,
+      "reduction_percent": 42.07946165302911,
+      "qualification": "Meshes only. Native curves/text are excluded. Source geometry remains intact; modifiers are reversible."
+    },
+    {
+      "key": "geometry_allocation",
+      "label": "Cycles geometry memory report",
+      "unit": "MiB",
+      "before": 13.994966506958008,
+      "after": 9.469419479370117,
+      "reduction_percent": 32.33696218806871,
+      "qualification": "Native Cycles geometry statistics, not total scene/driver memory."
+    },
+    {
+      "key": "render_time",
+      "label": "Render call, mean of two fresh-process runs",
+      "unit": "seconds",
+      "before": 39.2009096999991,
+      "after": 37.81277679999948,
+      "reduction_percent": 3.541073180757462,
+      "qualification": "Includes synchronization, rendering, denoising, identical optical-glow compositor and PNG output. Excludes optimization; only two runs, small timing difference."
+    },
+    {
+      "key": "host_ram",
+      "label": "Sampled process RSS peak, mean of two runs",
+      "unit": "MiB",
+      "before": 6107.83,
+      "after": 5043.685,
+      "reduction_percent": 17.42263618993979,
+      "qualification": "Freshly opened before/after scenes; does not include the separate optimization-process peak."
+    },
+    {
+      "key": "blend_size",
+      "label": "Packed Blender file size",
+      "unit": "MiB",
+      "before": 376.75452518463135,
+      "after": 404.8615303039551,
+      "reduction_percent": -7.460296622993362,
+      "qualification": "Negative reduction means growth. After retains originals for Restore; do not claim smaller files."
+    }
+  ],
+  "runs": [
+    {
+      "tag": "before_full_01",
+      "variant": "before",
+      "render_seconds": 39.57313779999822,
+      "cycles_peak_allocation_bytes": 2844725128,
+      "cycles_image_allocation_bytes": 2147485216,
+      "cycles_geometry_report_bytes": 14674786,
+      "sampled_global_gpu_peak_mib": 5128.0,
+      "initial_global_gpu_mib": 1246.0,
+      "sampled_process_rss_peak_mib": 6103.34,
+      "settings": {
+        "tag": "before_full_01",
+        "action": "render",
+        "status": "render_completed",
+        "blender": "5.3.0",
+        "load_seconds": 0.3372324000010849,
+        "devices": [
+          [
+            "NVIDIA GeForce RTX 4060 Ti",
+            "OPTIX"
+          ]
+        ],
+        "stage": "completed",
+        "resolution": [
+          1920,
+          1280,
+          100
+        ],
+        "samples": 192,
+        "adaptive": true,
+        "threshold": 0.017999999225139618,
+        "seed": 321,
+        "active_optimization": false,
+        "exposure": -0.6499999761581421,
+        "camera_matrix": [
+          [
+            0.8849181532859802,
+            -0.12534944713115692,
+            0.4485614597797394,
+            6.400000095367432
+          ],
+          [
+            0.46574658155441284,
+            0.23816396296024323,
+            -0.8522664308547974,
+            -11.699999809265137
+          ],
+          [
+            -4.9335532992245135e-08,
+            0.9631019830703735,
+            0.2691366970539093,
+            6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "render_seconds": 39.57313779999822,
+        "output": "<local-project>\\demo\\before_full_01.png",
+        "elapsed_seconds": 41.084734000000026
+      }
+    },
+    {
+      "tag": "after_full_01",
+      "variant": "after",
+      "render_seconds": 38.35326949999944,
+      "cycles_peak_allocation_bytes": 1526634228,
+      "cycles_image_allocation_bytes": 846464544,
+      "cycles_geometry_report_bytes": 9929406,
+      "sampled_global_gpu_peak_mib": 3896.0,
+      "initial_global_gpu_mib": 1204.0,
+      "sampled_process_rss_peak_mib": 5018.27,
+      "settings": {
+        "tag": "after_full_01",
+        "action": "render",
+        "status": "render_completed",
+        "blender": "5.3.0",
+        "load_seconds": 0.5214801999973133,
+        "devices": [
+          [
+            "NVIDIA GeForce RTX 4060 Ti",
+            "OPTIX"
+          ]
+        ],
+        "stage": "completed",
+        "resolution": [
+          1920,
+          1280,
+          100
+        ],
+        "samples": 192,
+        "adaptive": true,
+        "threshold": 0.017999999225139618,
+        "seed": 321,
+        "active_optimization": true,
+        "exposure": -0.6499999761581421,
+        "camera_matrix": [
+          [
+            0.8849181532859802,
+            -0.12534944713115692,
+            0.4485614597797394,
+            6.400000095367432
+          ],
+          [
+            0.46574658155441284,
+            0.23816396296024323,
+            -0.8522664308547974,
+            -11.699999809265137
+          ],
+          [
+            -4.9335532992245135e-08,
+            0.9631019830703735,
+            0.2691366970539093,
+            6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "render_seconds": 38.35326949999944,
+        "output": "<local-project>\\demo\\after_full_01.png",
+        "elapsed_seconds": 40.02403719999711
+      }
+    },
+    {
+      "tag": "before_full_02",
+      "variant": "before",
+      "render_seconds": 38.82868159999998,
+      "cycles_peak_allocation_bytes": 2844724648,
+      "cycles_image_allocation_bytes": 2147485216,
+      "cycles_geometry_report_bytes": 14674786,
+      "sampled_global_gpu_peak_mib": 5310.0,
+      "initial_global_gpu_mib": 1153.0,
+      "sampled_process_rss_peak_mib": 6112.32,
+      "settings": {
+        "tag": "before_full_02",
+        "action": "render",
+        "status": "render_completed",
+        "blender": "5.3.0",
+        "load_seconds": 0.34768089999852236,
+        "devices": [
+          [
+            "NVIDIA GeForce RTX 4060 Ti",
+            "OPTIX"
+          ]
+        ],
+        "stage": "completed",
+        "resolution": [
+          1920,
+          1280,
+          100
+        ],
+        "samples": 192,
+        "adaptive": true,
+        "threshold": 0.017999999225139618,
+        "seed": 321,
+        "active_optimization": false,
+        "exposure": -0.6499999761581421,
+        "camera_matrix": [
+          [
+            0.8849181532859802,
+            -0.12534944713115692,
+            0.4485614597797394,
+            6.400000095367432
+          ],
+          [
+            0.46574658155441284,
+            0.23816396296024323,
+            -0.8522664308547974,
+            -11.699999809265137
+          ],
+          [
+            -4.9335532992245135e-08,
+            0.9631019830703735,
+            0.2691366970539093,
+            6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "render_seconds": 38.82868159999998,
+        "output": "<local-project>\\demo\\before_full_02.png",
+        "elapsed_seconds": 40.38188369999989
+      }
+    },
+    {
+      "tag": "after_full_02",
+      "variant": "after",
+      "render_seconds": 37.272284099999524,
+      "cycles_peak_allocation_bytes": 1526633988,
+      "cycles_image_allocation_bytes": 846464544,
+      "cycles_geometry_report_bytes": 9929406,
+      "sampled_global_gpu_peak_mib": 4010.0,
+      "initial_global_gpu_mib": 1378.0,
+      "sampled_process_rss_peak_mib": 5069.1,
+      "settings": {
+        "tag": "after_full_02",
+        "action": "render",
+        "status": "render_completed",
+        "blender": "5.3.0",
+        "load_seconds": 0.5179140000000189,
+        "devices": [
+          [
+            "NVIDIA GeForce RTX 4060 Ti",
+            "OPTIX"
+          ]
+        ],
+        "stage": "completed",
+        "resolution": [
+          1920,
+          1280,
+          100
+        ],
+        "samples": 192,
+        "adaptive": true,
+        "threshold": 0.017999999225139618,
+        "seed": 321,
+        "active_optimization": true,
+        "exposure": -0.6499999761581421,
+        "camera_matrix": [
+          [
+            0.8849181532859802,
+            -0.12534944713115692,
+            0.4485614597797394,
+            6.400000095367432
+          ],
+          [
+            0.46574658155441284,
+            0.23816396296024323,
+            -0.8522664308547974,
+            -11.699999809265137
+          ],
+          [
+            -4.9335532992245135e-08,
+            0.9631019830703735,
+            0.2691366970539093,
+            6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "render_seconds": 37.272284099999524,
+        "output": "<local-project>\\demo\\after_full_02.png",
+        "elapsed_seconds": 38.91697840000052
+      }
+    }
+  ],
+  "analysis_seconds": 3.9886175999999978,
+  "application_validation_save_seconds": 9.328816199998982,
+  "core_preparation_seconds": 13.31743379999898,
+  "full_optimization_process_seconds": 16.515,
+  "textures_changed": 10,
+  "meshes_changed": 22,
+  "quality": {
+    "normalized_display_rgb_mae": 0.00027808734170751634,
+    "meaning": "Pixel difference at final camera; not a perceptual guarantee or proof of zero quality loss."
+  },
+  "validation": {
+    "pass": true,
+    "objects": 656,
+    "protected_objects_unchanged": 262,
+    "textures_changed": 10,
+    "meshes_changed": 22,
+    "camera_lights_settings_equal": true,
+    "source_meshes_unchanged": true,
+    "saved_file_restore_matches_before": true
+  },
+  "disclosure": "Controlled demonstration with intentionally oversized 8K/4K procedural bakes. Results are scene/hardware/preset specific. No hard-OOM rescue or universal speedup was proven."
+}

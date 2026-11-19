@@ -1,0 +1,178 @@
+{
+  "requested_gpu_oom_rescue_proven": false,
+  "reason": "No native GPU OOM occurred before the host-RAM safety limit. Both 16K paths hit the same child RSS guard; the add-on did not complete its 16K operation.",
+  "texture_pressure_reduction_proven_at_12k": true,
+  "settings": {
+    "blender": "5.3.0",
+    "gpu": "RTX 4060 Ti 8GB",
+    "backend": "OptiX",
+    "cpu_render_device": false,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "samples": 32,
+    "adaptive_sampling": false,
+    "denoising": true,
+    "persistent_data": false,
+    "compositing": false,
+    "sequencer": false,
+    "frame": 79
+  },
+  "watchdog": {
+    "process_rss_limit_gib": 20.5,
+    "system_ram_reserve_gib": 2,
+    "timeout_seconds": "240/300 by job",
+    "guard_abort_is_not_gpu_oom": true
+  },
+  "quality": {
+    "rgb_mean_absolute_difference_0_255": [
+      0.33688802083333336,
+      0.3010353973765432,
+      0.28419560185185183
+    ],
+    "normalized_rgb_mae": 0.001205384339949972,
+    "meaning": "Display-referred image difference at 32 samples; not a perceptual quality guarantee."
+  },
+  "measurements": [
+    {
+      "tag": "control_native",
+      "status": "render_completed",
+      "render_seconds": 8.91345530000035,
+      "analysis_seconds": null,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": 4.837712173350155,
+      "cycles_reported_image_alloc_gib": 3.383804813027382,
+      "sampled_peak_global_gpu_mib": 7376.0,
+      "sampled_peak_process_rss_gib": 7.375498046875,
+      "minimum_free_ram_gib": 15.148310546875,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "control_optimized",
+      "status": "render_completed",
+      "render_seconds": 7.796654000000672,
+      "analysis_seconds": 16.866000399999393,
+      "optimization_seconds": 4.726847599999928,
+      "cycles_reported_peak_alloc_gib": 4.206364368088543,
+      "cycles_reported_image_alloc_gib": 2.752457156777382,
+      "sampled_peak_global_gpu_mib": 6724.0,
+      "sampled_peak_process_rss_gib": 11.68068359375,
+      "minimum_free_ram_gib": 11.019052734375,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress8192_original",
+      "status": "render_completed",
+      "render_seconds": 12.489897299999939,
+      "analysis_seconds": null,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": 8.773253829218447,
+      "cycles_reported_image_alloc_gib": 5.821304813027382,
+      "sampled_peak_global_gpu_mib": 7668.0,
+      "sampled_peak_process_rss_gib": 12.401103515625,
+      "minimum_free_ram_gib": 9.996083984375,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress12288_original",
+      "status": "render_completed",
+      "render_seconds": 19.808958900000107,
+      "analysis_seconds": null,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": 13.585754164494574,
+      "cycles_reported_image_alloc_gib": 9.883804813027382,
+      "sampled_peak_global_gpu_mib": 7503.0,
+      "sampled_peak_process_rss_gib": 16.941025390625,
+      "minimum_free_ram_gib": 5.7941015625,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress12288_optimized",
+      "status": "render_completed",
+      "render_seconds": 7.742300899999464,
+      "analysis_seconds": 27.392520600000353,
+      "optimization_seconds": 25.545779799999764,
+      "cycles_reported_peak_alloc_gib": 4.206363511271775,
+      "cycles_reported_image_alloc_gib": 2.752457156777382,
+      "sampled_peak_global_gpu_mib": 6654.0,
+      "sampled_peak_process_rss_gib": 17.724111328125,
+      "minimum_free_ram_gib": 5.3566015625,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress12288_original_repeat",
+      "status": "render_completed",
+      "render_seconds": 19.857512500000666,
+      "analysis_seconds": null,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": 13.585753754712641,
+      "cycles_reported_image_alloc_gib": 9.883804813027382,
+      "sampled_peak_global_gpu_mib": 7509.0,
+      "sampled_peak_process_rss_gib": 17.16783203125,
+      "minimum_free_ram_gib": 6.79771484375,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress12288_optimized_repeat",
+      "status": "render_completed",
+      "render_seconds": 7.471416000000318,
+      "analysis_seconds": 27.495194699999047,
+      "optimization_seconds": 25.87203849999969,
+      "cycles_reported_peak_alloc_gib": 4.206363399513066,
+      "cycles_reported_image_alloc_gib": 2.752457156777382,
+      "sampled_peak_global_gpu_mib": 6690.0,
+      "sampled_peak_process_rss_gib": 17.2180859375,
+      "minimum_free_ram_gib": 6.031943359375,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress12288_reopened",
+      "status": "render_completed",
+      "render_seconds": 7.779566300001534,
+      "analysis_seconds": null,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": 4.206363399513066,
+      "cycles_reported_image_alloc_gib": 2.752457156777382,
+      "sampled_peak_global_gpu_mib": 6625.0,
+      "sampled_peak_process_rss_gib": 7.95208984375,
+      "minimum_free_ram_gib": 15.464677734375,
+      "last_stage": "completed"
+    },
+    {
+      "tag": "stress16384_original",
+      "status": "watchdog_child_rss_limit",
+      "render_seconds": null,
+      "analysis_seconds": null,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": null,
+      "cycles_reported_image_alloc_gib": null,
+      "sampled_peak_global_gpu_mib": 7639.0,
+      "sampled_peak_process_rss_gib": 20.619794921875,
+      "minimum_free_ram_gib": 2.152919921875,
+      "last_stage": "rendering"
+    },
+    {
+      "tag": "stress16384_optimized",
+      "status": "watchdog_child_rss_limit",
+      "render_seconds": null,
+      "analysis_seconds": 35.27758189999986,
+      "optimization_seconds": null,
+      "cycles_reported_peak_alloc_gib": null,
+      "cycles_reported_image_alloc_gib": null,
+      "sampled_peak_global_gpu_mib": 963.0,
+      "sampled_peak_process_rss_gib": 20.56439453125,
+      "minimum_free_ram_gib": 3.450322265625,
+      "last_stage": "analyzed"
+    }
+  ],
+  "measurement_notes": [
+    "Cycles peak allocation includes mapped host memory and is not dedicated GPU VRAM.",
+    "nvidia-smi readings are sampled global totals, including Windows/apps, not per-process WDDM memory.",
+    "render_seconds includes synchronization, sampling, denoising and output, excluding analysis/optimization.",
+    "No CPU rendering fallback was enabled. GPU may use system RAM for allocations.",
+    "Original user .blend and installed add-on were not edited by this benchmark.",
+    "Initial compositor-dependent control rendered transparent and is explicitly excluded.",
+    "Pro Lens/Bokeh driver warnings occurred with auto-execution disabled. This is not a timing reproduction of the original 1024-sample pipeline."
+  ]
+}

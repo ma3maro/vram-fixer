@@ -1,0 +1,9 @@
+﻿key,label,unit,before,after,reduction_percent,qualification
+texture_allocation,Cycles image/texture allocation,MiB,2048.001495361328,807.2514953613281,60.583451858324686,Native Cycles image allocation report; not total dedicated GPU VRAM.
+cycles_allocation,Cycles reported peak allocation,MiB,2712.941062927246,1455.9117393493652,46.334560700760456,Native Cycles allocation report; can include mapped host memory and excludes driver/compositor overhead.
+gpu_global,"Sampled global GPU peak, mean of two runs",MiB,5219.0,3953.0,24.257520597815674,"nvidia-smi sampled global total, including Windows/apps; not isolated per-process VRAM. Desktop usage varied between runs."
+mesh_triangles,Evaluated mesh triangles,triangles,663364,384224,42.07946165302911,Meshes only. Native curves/text are excluded. Source geometry remains intact; modifiers are reversible.
+geometry_allocation,Cycles geometry memory report,MiB,13.994966506958008,9.469419479370117,32.33696218806871,"Native Cycles geometry statistics, not total scene/driver memory."
+render_time,"Render call, mean of two fresh-process runs",seconds,39.2009096999991,37.81277679999948,3.541073180757462,"Includes synchronization, rendering, denoising, identical optical-glow compositor and PNG output. Excludes optimization; only two runs, small timing difference."
+host_ram,"Sampled process RSS peak, mean of two runs",MiB,6107.83,5043.685,17.42263618993979,Freshly opened before/after scenes; does not include the separate optimization-process peak.
+blend_size,Packed Blender file size,MiB,376.75452518463135,404.8615303039551,-7.460296622993362,Negative reduction means growth. After retains originals for Restore; do not claim smaller files.

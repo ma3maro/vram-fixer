@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+id = "vram_fixer"
+version = "1.1.0"
+name = "VRAM Fixer"
+tagline = "Camera-aware texture and mesh budgets with protected assets"
+maintainer = "VRAM Fixer"
+type = "add-on"
+tags = ["Render", "Material", "Mesh"]
+blender_version_min = "5.3.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc", ".*", "*.blend", "*.blend1"]
